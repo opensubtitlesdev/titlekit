@@ -47,13 +47,13 @@
 
 9
 00:00:11,975 --> 00:00:11,988
-<font color="#EDF393">That is correct</font>
+<font color="#F5E665">Esto es correcto</font>
 <font color="#FFA891">¡Dios mio!</font>
 
 10
 00:00:11,988 --> 00:00:12,044
-<font color="#EDF393">That is correct</font>
 <font color="#F5E665">Esto es correcto</font>
+<font color="#FFC472">Das stimmt</font>
 <font color="#FFA891">¡Dios mio!</font>
 
 11

@@ -14,12 +14,12 @@ Style: 89BABE,Arial,16,&H00BEBA89,&H00BEBA89,&H40000000,&H40000000,0,0,0,0,100,1
 
 [Events]
 Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:02.00,0:00:10.00,Default,,0000,0000,0000,,We are using three subtitles simultaneously
-Dialogue: 0,0:00:02.00,0:00:10.00,Top,,0000,0000,0000,,Somos utilizando tres subtítulos simultáneamente
+Dialogue: 0,0:00:02.00,0:00:10.00,Default,,0000,0000,0000,,Somos utilizando tres subtítulos simultáneamente
+Dialogue: 0,0:00:02.00,0:00:10.00,Top,,0000,0000,0000,,We are using three subtitles simultaneously
 Dialogue: 0,0:00:02.50,0:00:10.00,Middle,,0000,0000,0000,,Wir verwenden drei Untertitel zur gleichen Zeit
-Dialogue: 0,0:00:12.00,0:00:20.00,Default,,0000,0000,0000,,That is correct
-Dialogue: 0,0:00:12.00,0:00:20.50,Top,,0000,0000,0000,,Esto es correcto
+Dialogue: 0,0:00:12.00,0:00:20.00,Top,,0000,0000,0000,,That is correct
+Dialogue: 0,0:00:12.00,0:00:20.50,Default,,0000,0000,0000,,Esto es correcto
 Dialogue: 0,0:00:12.50,0:00:21.00,Middle,,0000,0000,0000,,Das stimmt
 Dialogue: 0,0:00:22.00,0:00:30.00,Middle,,0000,0000,0000,,Sie sind jedoch nicht ganz synchron
-Dialogue: 0,0:00:22.50,0:00:30.50,Default,,0000,0000,0000,,They are not fully aligned, though
-Dialogue: 0,0:00:23.00,0:00:31.00,Top,,0000,0000,0000,,No son alineado sin embargo
+Dialogue: 0,0:00:22.50,0:00:30.50,Top,,0000,0000,0000,,They are not fully aligned, though
+Dialogue: 0,0:00:23.00,0:00:31.00,Default,,0000,0000,0000,,No son alineado sin embargo

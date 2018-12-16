@@ -1,6 +1,7 @@
 require 'titlekit/utilities'
 require 'titlekit/parsers/ass'
 require 'titlekit/parsers/ssa'
+require 'titlekit/parsers/ssaplus'
 require 'titlekit/parsers/srt'
 require 'titlekit/specification'
 require 'titlekit/have'

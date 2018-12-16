@@ -27,6 +27,18 @@ describe Titlekit::SSA do
       end
     end
   end
+  
+  describe '.import ssa+' do
+     context 'with a simple file' do
+        let(:subtitles) do
+          Titlekit::SSAPLUS.import(File.read('spec/files/ssa/ssaplus.ssa'))
+        end
+        it 'parses and builds 4 subtitles' do
+          expect(subtitles.length).to eq(4)
+        end
+      end
+    
+  end
 
   describe '.export' do
     it 'should export valid SSA' do

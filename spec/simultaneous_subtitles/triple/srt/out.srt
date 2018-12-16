@@ -1,28 +1,28 @@
 1
 00:00:02,000 --> 00:00:02,500
-<font color="#EDF393">We are using three subtitles simultaneously</font>
-<font color="#F5E665">Somos utilizando tres subtítulos simultáneamente</font>
+<font color="#EDF393">Somos utilizando tres subtítulos simultáneamente</font>
+<font color="#F5E665">We are using three subtitles simultaneously</font>
 
 2
 00:00:02,500 --> 00:00:10,000
-<font color="#EDF393">We are using three subtitles simultaneously</font>
-<font color="#F5E665">Somos utilizando tres subtítulos simultáneamente</font>
+<font color="#EDF393">Somos utilizando tres subtítulos simultáneamente</font>
+<font color="#F5E665">We are using three subtitles simultaneously</font>
 <font color="#FFC472">Wir verwenden drei Untertitel zur gleichen Zeit</font>
 
 3
 00:00:12,000 --> 00:00:12,500
-<font color="#EDF393">That is correct</font>
-<font color="#F5E665">Esto es correcto</font>
+<font color="#EDF393">Esto es correcto</font>
+<font color="#F5E665">That is correct</font>
 
 4
 00:00:12,500 --> 00:00:20,000
-<font color="#EDF393">That is correct</font>
-<font color="#F5E665">Esto es correcto</font>
+<font color="#EDF393">Esto es correcto</font>
+<font color="#F5E665">That is correct</font>
 <font color="#FFC472">Das stimmt</font>
 
 5
 00:00:20,000 --> 00:00:20,500
-<font color="#F5E665">Esto es correcto</font>
+<font color="#EDF393">Esto es correcto</font>
 <font color="#FFC472">Das stimmt</font>
 
 6
@@ -35,21 +35,21 @@
 
 8
 00:00:22,500 --> 00:00:23,000
-<font color="#EDF393">They are not fully aligned, though</font>
+<font color="#F5E665">They are not fully aligned, though</font>
 <font color="#FFC472">Sie sind jedoch nicht ganz synchron</font>
 
 9
 00:00:23,000 --> 00:00:30,000
-<font color="#EDF393">They are not fully aligned, though</font>
-<font color="#F5E665">No son alineado sin embargo</font>
+<font color="#EDF393">No son alineado sin embargo</font>
+<font color="#F5E665">They are not fully aligned, though</font>
 <font color="#FFC472">Sie sind jedoch nicht ganz synchron</font>
 
 10
 00:00:30,000 --> 00:00:30,500
-<font color="#EDF393">They are not fully aligned, though</font>
-<font color="#F5E665">No son alineado sin embargo</font>
+<font color="#EDF393">No son alineado sin embargo</font>
+<font color="#F5E665">They are not fully aligned, though</font>
 
 11
 00:00:30,500 --> 00:00:31,000
-<font color="#F5E665">No son alineado sin embargo</font>
+<font color="#EDF393">No son alineado sin embargo</font>
 
