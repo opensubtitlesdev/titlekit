@@ -32,11 +32,11 @@ module Titlekit
       @wants = []
       @report = []
 
-      require 'rchardet19'
+      require "rchardet19"
 
       begin
-        if Gem::Specification.find_by_name('charlock_holmes')
-          require 'charlock_holmes'
+        if Gem::Specification.find_by_name("charlock_holmes")
+          require "charlock_holmes"
         end
       rescue Gem::LoadError
       end
@@ -96,6 +96,7 @@ module Titlekit
     # @param template [Have] optionally you can specify another {Have} as a
     #   template, from which all properties but the file path are cloned
     # @return [Have] a reference to the newly assigned {Have}
+    #
     def have(*_args, template: nil, &block)
       specification = Have.new
 
@@ -200,25 +201,24 @@ module Titlekit
       end
 
       begin
-        data.encode!('UTF-8')
+        data.encode!("UTF-8")
       rescue
         @report << "Failure while transcoding #{have.file} from #{data.encoding} to intermediate UTF-8 encoding"
         raise AbortJob
       end
 
       begin
-        have.subtitles =
-          case File.extname(have.file)
-          when '.ass'
+        have.subtitles = case File.extname(have.file)
+          when ".ass"
             ASS.import(data)
-          when '.ssa'
+          when ".ssa"
             SSA.import(data)
-          when '.srt'
+          when ".srt"
             SRT.import(data)
-          when '.yt'
+          when ".yt"
             YT.import(data)
           else
-            fail 'Not supported'
+            fail "Not supported"
           end
       rescue
         @report << "Failure while importing #{File.extname(have.file)[1..3].upcase} from #{have.file}"
@@ -243,7 +243,7 @@ module Titlekit
       case matching_references.length
       when 3..(_infinity = 1.0 / 0)
         # "synchronization jitter" correction by interpolating ? Consider !
-      when  2
+      when 2
         retime_by_double_reference(have,
                                    want,
                                    matching_references[0],
@@ -343,22 +343,21 @@ module Titlekit
     # @param want [Want] What we {Want}
     def export(want)
       begin
-        data =
-          case File.extname(want.file)
-          when '.ass'
+        data = case File.extname(want.file)
+          when ".ass"
             ASS.master(want.subtitles)
             ASS.export(want.subtitles)
-          when '.ssa'
+          when ".ssa"
             SSA.master(want.subtitles)
             SSA.export(want.subtitles)
-          when '.srt'
+          when ".srt"
             SRT.master(want.subtitles)
             SRT.export(want.subtitles)
-          when '.yt'
+          when ".yt"
             YT.master(want.subtitles)
             YT.export(want.subtitles)
           else
-            fail 'Not supported'
+            fail "Not supported"
           end
       rescue
         @report << "Failure while exporting #{File.extname(want.file)[1..3].upcase} for #{want.file}"
@@ -437,12 +436,12 @@ module Titlekit
     def retime_by_double_reference(have, want, reference_a, reference_b)
       origins = [
         have.references[reference_a][:timecode],
-        have.references[reference_b][:timecode]
+        have.references[reference_b][:timecode],
       ]
 
       targets = [
         want.references[reference_a][:timecode],
-        want.references[reference_b][:timecode]
+        want.references[reference_b][:timecode],
       ]
 
       rescale_factor = (targets[1] - targets[0]) / (origins[1] - origins[0])
